@@ -23,11 +23,23 @@ int main(){
         break;
         case 3: printf("%d X %d = %d",x,y,x*y);
         break;
-        case 4: printf("%d / %d = %d",x,y,x/y);
+        case 4: 
+            if(y!=0){
+                printf("%d / %d = %d",x,y,x/y);
+            }
+            else {
+                printf("invaled");
+            }
         break;
-        case 5: printf("%d %% %d = %d",x,y,x%y);
+        case 5: 
+            if(y!=0){
+                printf("%d %% %d = %d",x,y,x%y);
+            }
+            else {
+                printf("invaled");
+            }
         break;
-        }
+    }
+        
     return 0;
-    
-}
+    }
